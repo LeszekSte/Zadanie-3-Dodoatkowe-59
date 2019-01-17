@@ -13,11 +13,23 @@ public class Product {
         this.category = category;
 
     }
+    Product(String name, String descryption, double price) {
+        this.descryption = descryption;
+        this.name = name;
+        this.price = price;
+    }
 
     String opis() {
-        return "Nazwa - " + name + ", Opis - " + descryption + ", Cena - " + price
-                + ", Typ - " + category.nameCategory + ", Kategoria - " + category.descriptionCategory;
+        String opisProduktu = "Nazwa - " + name + ", Opis - " + descryption + ", Cena - " + price
+                    + ", Typ - " + category.nameCategory + ", Kategoria - " + category.descriptionCategory;
+        return opisProduktu;
+        }
 
-
+    String opis1() {
+        String opisProduktu = "Nazwa - " + name + ", Opis - " + descryption + ", Cena - " + price;
+        return opisProduktu;
     }
+
+
+
 }
