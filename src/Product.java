@@ -6,19 +6,18 @@ public class Product {
     Category category;
 
 
-    Product(String name, String opis1, double price, Category category) {
-        this.descryption = opis1;
+    Product(String name, String descryption, double price, Category category) {
+        this.descryption = descryption;
         this.name = name;
         this.price = price;
         this.category = category;
+
     }
 
     String opis() {
-//        category = new Category();
-        return "Nazwa - " + name + ", Opis - " + descryption + ", Cena " + price;
-        //
-//                "\nNazwa kategori" + category.nameCategory +"\nOpis kategori" + category.descriptionCategory*?);
-//
+        return "Nazwa - " + name + ", Opis - " + descryption + ", Cena - " + price
+                + ", Typ - " + category.nameCategory + ", Kategoria - " + category.descriptionCategory;
+
 
     }
 }

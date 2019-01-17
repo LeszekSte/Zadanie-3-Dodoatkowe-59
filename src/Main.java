@@ -6,12 +6,17 @@ public class Main {
 
 
        Category category = new Category("Rowery",opisProd);
-        Product product = new Product("Merida","Fajny rowerek", 1500, category);
+        Product product1 = new Product("Merida","Fajny rowerek", 1500, category);
+        Product product2 = new Product("Romet","Dzieciecy", 700, category);
 
 
-        System.out.println(category.opis());
-        System.out.println(product.opis());
-        System.out.println(product.category.descriptionCategory);
+//        System.out.println(category.opis());
+        
+        System.out.println(product1.opis());
+        System.out.println(product2.opis());
+//        System.out.println(product.category.nameCategory);
+
+//        System.out.println(product.category.descriptionCategory);
 
     }
 
